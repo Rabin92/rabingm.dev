@@ -12,10 +12,10 @@
 }
 
 .nav-social-icons {
-  @include flexy($j-content: center, $a-items: flex-end);
+  @include flexy($j-content: flex-end, $a-items: flex-end);
   height: calc(90vh - 75%);
   a svg {
-    margin-left: 20px;
+    margin-right: 20px;
     opacity: 0.4;
     &:hover {
       opacity: 1;
