@@ -1,0 +1,31 @@
+/* ******************************* TYPOGRAPHY ******************************* */
+
+// Google fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1em;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  padding-top: 64px;
+  background: #f7f9fb url(../images/wallpaper.png) left;
+  background-size: cover;
+}
+
+.container {
+  @include flexy($j-content: space-between);
+  @media #{$break-l} {
+    width: 85%;
+    margin: 0 auto;
+  }
+  padding: 0.75em;
+}
+
+img {
+  max-width: 100%;
+}

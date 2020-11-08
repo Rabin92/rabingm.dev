@@ -1,0 +1,9 @@
+/* **************************** PROGRAMMING LOGO **************************** */
+.programming {
+  @include flexy($j-content: space-evenly);
+  margin-top: 30px;
+  &_logo {
+    height: 40px;
+    transform: rotate(-45deg);
+  }
+}

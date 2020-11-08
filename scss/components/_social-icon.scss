@@ -1,0 +1,24 @@
+/* ******************************* SOCIAL ICON ****************************** */
+.social-icon {
+  margin-bottom: 30px;
+  a svg {
+    margin-left: 20px;
+    opacity: 0.4;
+    &:hover {
+      opacity: 1;
+      transition: all 0.6s ease-in-out;
+    }
+  }
+}
+
+.test {
+  @include flexy($j-content: center, $a-items: flex-end);
+  height: calc(90vh - 75%);
+  a svg {
+    margin-left: 20px;
+    opacity: 0.4;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

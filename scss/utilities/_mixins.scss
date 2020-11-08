@@ -1,0 +1,24 @@
+@mixin flexy(
+  $dsp: flex,
+  $f-dir: null,
+  $j-content: null,
+  $a-items: null,
+  $a-self: null
+) {
+  display: $dsp;
+  flex-direction: $f-dir;
+  justify-content: $j-content;
+  align-items: $a-items;
+  align-self: $a-self;
+}
+
+@mixin headingFont(
+  $font-fam: (
+    'Titillium Web',
+    sans-serif,
+  ),
+  $font-weight: null
+) {
+  font-family: $font-fam;
+  font-weight: $font-weight;
+}

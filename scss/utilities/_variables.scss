@@ -1,0 +1,20 @@
+// Color
+$primary_col: seagreen;
+$secondary_col: rgba(29, 36, 42, 0.9);
+$col_white: #fff;
+$col_black: #000;
+$hamburger_col: rgb(150, 150, 176);
+$logo_col: rgb(111, 41, 30);
+$align_center: center;
+$border-col: rgba(0, 0, 0, 0.125);
+$box-shadow-col: rgba(0, 0, 0, 0.05);
+
+// position
+$relative: relative;
+$absolute: absolute;
+$fixed: fixed;
+
+// Media Queries
+$break-s: '(min-width: 768px)';
+$break-m: '(min-width: 900px)';
+$break-l: '(min-width: 1024px)';

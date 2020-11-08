@@ -1,0 +1,95 @@
+/* ********************************** ABOUT ********************************* */
+.about {
+  @media #{$break-m} {
+    margin-top: 20px;
+  }
+  box-shadow: $box-shadow-col 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  background: $col-white;
+  padding: 1.5em;
+  min-height: 100vh;
+  > h1 {
+    @media #{$break-m} {
+      margin-bottom: 55px;
+    }
+    @include headingFont($font-weight: 700);
+    letter-spacing: 0.071em;
+    margin: 40px 0;
+    text-align: $align_center;
+    position: $relative;
+    &::before {
+      content: '';
+      position: $absolute;
+      width: 2.5em;
+      left: calc(50% - 45px);
+      bottom: -15px;
+      border-bottom: 3px solid $primary_col;
+    }
+  }
+  &-content {
+    display: grid;
+    grid-gap: 25px 25px;
+    grid-template-areas:
+      'imgCoder'
+      'aboutContent';
+    padding: 1em;
+    @media #{$break-m} {
+      grid-template-areas: 'aboutContent imgCoder';
+    }
+  }
+}
+
+.flex-container {
+  @include flexy($f-dir: column, $j-content: center);
+}
+
+.grid-area {
+  &-one {
+    grid-area: aboutContent;
+  }
+  &-two {
+    grid-area: imgCoder;
+    > img {
+      @media #{$break-m} {
+        margin-top: initial;
+      }
+      margin-top: 30px;
+    }
+  }
+}
+
+.about-sec {
+  letter-spacing: 0.084em;
+  line-height: 31px;
+  &::first-letter {
+    @include headingFont($font-weight: 400);
+    font-size: 3em;
+    font-weight: 800;
+    color: rgb(88, 88, 88);
+  }
+}
+
+.quote {
+  text-transform: uppercase;
+  line-height: 32px;
+  letter-spacing: 0.125em;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 732;
+  color: rgb(89, 89, 89);
+  text-align: $align_center;
+}
+
+small {
+  line-height: 23px;
+  letter-spacing: 0.074em;
+}
+
+.img-coder {
+  @media #{$break-m} {
+    margin-bottom: initial;
+  }
+  margin-bottom: 50px;
+  padding-bottom: 30px;
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}

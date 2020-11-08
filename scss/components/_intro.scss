@@ -1,0 +1,91 @@
+/* ********************************** INTRO ********************************* */
+.intro {
+  @include flexy($a-items: center);
+  @media #{$break-m} {
+    padding: 1em;
+    min-height: 100vh;
+  }
+  height: auto;
+  min-height: 0;
+  color: $col-black;
+  text-align: $align_center;
+  &-content {
+    @include flexy($f-dir: column, $a-items: center);
+    width: 100vw;
+    .intro-name {
+      @include headingFont($font-weight: 700);
+      > h2 {
+        @media #{$break-m} {
+          font-size: 2.3em;
+          letter-spacing: 0.168em;
+          margin-bottom: 15px;
+        }
+        letter-spacing: 0.16em;
+        font-size: 1.6em;
+      }
+      h3 {
+        letter-spacing: 0.189em;
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+.btn {
+  @media #{$break-m} {
+    font-size: 19px;
+    letter-spacing: 0.157em;
+    line-height: 22px;
+    padding: 0.7em;
+  }
+  @include headingFont($font-weight: 400);
+  font-size: 18px;
+  letter-spacing: 0.115em;
+  line-height: 20px;
+  padding: 0.85em;
+  border-radius: 5px;
+  color: $col_white;
+  background: $primary_col;
+  &-view {
+    margin-top: 85px;
+  }
+  &:hover {
+    background-color: lighten($primary_col, 4%);
+    transition: all 0.5ms ease-in-out;
+  }
+}
+
+.web-dev {
+  margin-top: 30px;
+  height: 120px;
+  border-radius: 50%;
+  background-image: linear-gradient(
+    to top,
+    #4e4f4f,
+    #3b3c3c,
+    #29292a,
+    #181818,
+    #000000
+  );
+  margin-bottom: 30px;
+}
+
+.down-arrow {
+  @media #{$break-m} {
+    margin-top: 90px;
+    height: 65px;
+    animation: slideArrow 0.9s ease-in-out infinite;
+  }
+  height: 50px;
+  margin-top: 70px;
+}
+
+/* Animation */
+@keyframes slideArrow {
+  0% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}

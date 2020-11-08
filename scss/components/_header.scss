@@ -1,0 +1,28 @@
+/* ********************************* HEADER ********************************* */
+header {
+  position: $fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  overflow-y: hidden;
+  z-index: 10;
+}
+
+.header {
+  background: $col-white;
+}
+
+.logo {
+  @include headingFont($font-weight: 700);
+  padding: 0.3em;
+  border-top-left-radius: 80%;
+  border-bottom-left-radius: 80%;
+  border-left: 2px solid $primary_col;
+  color: $primary_col;
+}
+
+/* Modify the color of Navbar when scrolled */
+.nav-scrolled {
+  background: $secondary_col;
+  transition: all 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+}
