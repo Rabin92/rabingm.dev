@@ -970,12 +970,12 @@ small {
 
 .nav-social-icons {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: flex-end;
   height: calc(90vh - 75%);
 }
 .nav-social-icons a svg {
-  margin-left: 20px;
+  margin-right: 20px;
   opacity: 0.4;
 }
 .nav-social-icons a svg:hover {
