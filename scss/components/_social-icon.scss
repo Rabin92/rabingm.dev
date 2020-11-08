@@ -11,7 +11,7 @@
   }
 }
 
-.test {
+.nav-social-icons {
   @include flexy($j-content: center, $a-items: flex-end);
   height: calc(90vh - 75%);
   a svg {
