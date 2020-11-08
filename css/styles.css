@@ -968,17 +968,17 @@ small {
   transition: all 0.6s ease-in-out;
 }
 
-.test {
+.nav-social-icons {
   display: flex;
   justify-content: center;
   align-items: flex-end;
   height: calc(90vh - 75%);
 }
-.test a svg {
+.nav-social-icons a svg {
   margin-left: 20px;
   opacity: 0.4;
 }
-.test a svg:hover {
+.nav-social-icons a svg:hover {
   opacity: 1;
 }
 
