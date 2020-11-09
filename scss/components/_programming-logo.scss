@@ -2,11 +2,12 @@
 .programming {
   @include flexy($j-content: space-evenly, $a-items: center);
   margin-top: 70px;
-  background: rgba(29, 36, 42, 0.9);
+  background: $secondary_col;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   height: 15vh;
   margin: 0 -1.5em;
   display: none;
-  @media #{$break-m} {
+  @media #{$break-l} {
     @include flexy();
   }
   &_logo {

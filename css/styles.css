@@ -839,11 +839,12 @@ nav ul li a:hover {
   align-items: center;
   margin-top: 70px;
   background: rgba(29, 36, 42, 0.9);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   height: 15vh;
   margin: 0 -1.5em;
   display: none;
 }
-@media (min-width: 900px) {
+@media (min-width: 1024px) {
   .programming {
     display: flex;
   }
