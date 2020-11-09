@@ -59,8 +59,14 @@
 }
 
 .about-sec {
-  letter-spacing: 0.084em;
-  line-height: 31px;
+  @media #{$break-xs} {
+    font-size: 1em;
+    letter-spacing: 0.084em;
+    line-height: 31px;
+  }
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: 0.068em;
   &::first-letter {
     @include headingFont($font-weight: 400);
     font-size: 3em;
@@ -70,10 +76,15 @@
 }
 
 .quote {
+  @media #{$break-xs} {
+    line-height: 32px;
+    letter-spacing: 0.125em;
+    font-size: 16px;
+  }
+  font-size: 12px;
+  line-height: 26px;
+  letter-spacing: 0.071em;
   text-transform: uppercase;
-  line-height: 32px;
-  letter-spacing: 0.125em;
-  font-size: 16px;
   font-style: normal;
   color: rgb(89, 89, 89);
   text-align: $align_center;
@@ -88,7 +99,7 @@ small {
   @media #{$break-m} {
     margin-bottom: initial;
   }
-  margin-bottom: 50px;
+  margin-bottom: 10px;
   padding-bottom: 30px;
   box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
 }

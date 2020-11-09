@@ -1,7 +1,10 @@
 /* ********************************* FOOTER ********************************* */
 footer {
   @include headingFont($font-weight: 400);
-  font-size: 14px;
+  @media #{$break-xs} {
+    font-size: 14px;
+  }
+  font-size: 10px;
   background: $secondary_col;
   padding: 6em 0 4em 0;
   text-align: $align_center;
