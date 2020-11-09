@@ -383,7 +383,7 @@ body {
   font-family: "Roboto Slab", serif;
   font-weight: 300;
   padding-top: 64px;
-  background: #f7f9fb url(../images/wallpaper.png) left;
+  background: #f7f9fb url(../images/wallpaper.png) no-repeat left;
   background-size: cover;
 }
 
@@ -836,13 +836,35 @@ nav ul li a:hover {
 .programming {
   display: flex;
   justify-content: space-evenly;
-  margin-top: 30px;
+  align-items: center;
+  margin-top: 70px;
+  background: rgba(29, 36, 42, 0.9);
+  height: 15vh;
+  margin: 0 -1.5em;
+  display: none;
+}
+@media (min-width: 900px) {
+  .programming {
+    display: flex;
+  }
 }
 .programming_logo {
   height: 40px;
-  transform: rotate(-45deg);
+  animation: pulse 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite;
 }
 
+/* Animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
 /* ********************************** ABOUT ********************************* */
 .about {
   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
@@ -927,7 +949,6 @@ nav ul li a:hover {
   letter-spacing: 0.125em;
   font-size: 16px;
   font-style: normal;
-  font-weight: 732;
   color: #595959;
   text-align: center;
 }
