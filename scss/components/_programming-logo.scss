@@ -2,15 +2,15 @@
 .programming {
   @include flexy($j-content: space-evenly, $a-items: center);
   margin-top: 70px;
-  background: $secondary_col;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  height: 15vh;
-  margin: 0 -1.5em;
+  height: 12vh;
   display: none;
   @media #{$break-l} {
     @include flexy();
   }
   &_logo {
+    background: rgb(129, 185, 129);
+    padding: 0.4em;
+    border-radius: 50%;
     height: 40px;
     animation: pulse 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite;
   }
