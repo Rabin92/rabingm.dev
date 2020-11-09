@@ -671,7 +671,7 @@ nav ul li a:hover {
 /* ********************************* SECTION ******************************** */
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   grid-gap: 25px 40px;
   padding: 1em;
 }
@@ -791,9 +791,16 @@ nav ul li a:hover {
   font-size: 1.3em;
 }
 .section-overlay .info > a {
-  margin-left: 30px;
+  font-size: 16px;
+  margin-left: 10px;
   color: #2997ff;
   text-align: center;
+}
+@media (min-width: 400px) {
+  .section-overlay .info > a {
+    margin-left: 30px;
+    font-size: 22px;
+  }
 }
 .section-overlay .info > a::after {
   content: "›";
@@ -805,6 +812,7 @@ nav ul li a:hover {
 }
 
 .active p {
+  font-size: 14px;
   height: auto;
   padding: 0.55em;
   background: #fff;
@@ -815,6 +823,11 @@ nav ul li a:hover {
 @media (min-width: 768px) {
   .active p {
     animation: slide 0.6s ease-in-out forwards;
+  }
+}
+@media (min-width: 400px) {
+  .active p {
+    font-size: 16px;
   }
 }
 
@@ -838,10 +851,7 @@ nav ul li a:hover {
   justify-content: space-evenly;
   align-items: center;
   margin-top: 70px;
-  background: rgba(29, 36, 42, 0.9);
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  height: 15vh;
-  margin: 0 -1.5em;
+  height: 12vh;
   display: none;
 }
 @media (min-width: 1024px) {
@@ -850,6 +860,9 @@ nav ul li a:hover {
   }
 }
 .programming_logo {
+  background: #81b981;
+  padding: 0.4em;
+  border-radius: 50%;
   height: 40px;
   animation: pulse 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite;
 }
@@ -933,8 +946,16 @@ nav ul li a:hover {
 }
 
 .about-sec {
-  letter-spacing: 0.084em;
-  line-height: 31px;
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: 0.068em;
+}
+@media (min-width: 400px) {
+  .about-sec {
+    font-size: 1em;
+    letter-spacing: 0.084em;
+    line-height: 31px;
+  }
 }
 .about-sec::first-letter {
   font-family: "Titillium Web", sans-serif;
@@ -945,13 +966,20 @@ nav ul li a:hover {
 }
 
 .quote {
+  font-size: 12px;
+  line-height: 26px;
+  letter-spacing: 0.071em;
   text-transform: uppercase;
-  line-height: 32px;
-  letter-spacing: 0.125em;
-  font-size: 16px;
   font-style: normal;
   color: #595959;
   text-align: center;
+}
+@media (min-width: 400px) {
+  .quote {
+    line-height: 32px;
+    letter-spacing: 0.125em;
+    font-size: 16px;
+  }
 }
 
 small {
@@ -960,7 +988,7 @@ small {
 }
 
 .img-coder {
-  margin-bottom: 50px;
+  margin-bottom: 10px;
   padding-bottom: 30px;
   box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
 }
@@ -1008,13 +1036,18 @@ small {
 footer {
   font-family: "Titillium Web", sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 10px;
   background: rgba(29, 36, 42, 0.9);
   padding: 6em 0 4em 0;
   text-align: center;
   color: rgba(255, 255, 255, 0.5);
   letter-spacing: 0.225em;
   text-transform: uppercase;
+}
+@media (min-width: 400px) {
+  footer {
+    font-size: 14px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
