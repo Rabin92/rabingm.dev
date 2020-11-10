@@ -57,7 +57,6 @@ const projects = [
     A responsive, mobile-first registration form using a variety of
     HTML form elements. HTML required attribute added in input
     field.
-    
     `,
   },
   {
@@ -67,12 +66,13 @@ const projects = [
     code_link: 'https://github.com/Rabin92/techdegree-project4',
     heading: 'Web Style Guide',
     intro: `
-    Compiled the provided CSS file into SASS to keep the file more
+    Compiled the provided CSS into SASS to keep the file more
     organised. Utilised variables, mixins, loops and ampersand.
     `,
   },
 ];
 
+// Generate div
 const card = document.querySelector('.grid-container');
 let html = '';
 
@@ -102,6 +102,5 @@ projects.forEach(project => {
 </div>
 </div>
 `;
+  card.innerHTML = html;
 });
-
-card.innerHTML = html;

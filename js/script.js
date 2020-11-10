@@ -38,7 +38,7 @@ const removeClass = (element, classOne, classTwo, classThree) => {
   element.classList.remove(classOne, classTwo, classThree);
 };
 
-// Function
+// Function - Menu
 const toggleMenu = () => {
   nav.classList.toggle('show');
 
@@ -64,63 +64,6 @@ accordions.forEach(accordion => {
     accordion.classList.toggle('active');
   });
 });
-
-// Scroll Animation
-const scrollAnimation = () => {
-  const cards = document.querySelectorAll('.card');
-  const aboutSection = document.querySelector('.js-aboutSec');
-  const imgCoder = document.querySelector('#js-coder');
-
-  const positionTop = document.documentElement.scrollTop;
-
-  cards.forEach(card => {
-    if (positionTop >= 200 && largeScreen.matches) {
-      addClass(
-        card,
-        'animate__animated',
-        'animate__fadeInRightBig',
-        'animate__slow'
-      );
-    } else {
-      removeClass(
-        card,
-        'animate__animated',
-        'animate__fadeInRightBig',
-        'animate__slow'
-      );
-    }
-  });
-
-  if (positionTop >= 1158 && largeScreen.matches) {
-    addClass(
-      aboutSection,
-      'animate__animated',
-      'animate__fadeInLeftBig',
-      'animate__slow'
-    );
-
-    addClass(
-      imgCoder,
-      'animate__animated',
-      'animate__fadeInRightBig',
-      'animate__slow'
-    );
-  } else {
-    removeClass(
-      aboutSection,
-      'animate__animated',
-      'animate__fadeInLeftBig',
-      'animate__slow'
-    );
-
-    removeClass(
-      imgCoder,
-      'animate__animated',
-      'animate__fadeInRightBig',
-      'animate__slow'
-    );
-  }
-};
 
 // Intro Animation
 const introHeading = document.querySelector('.intro-content img');
@@ -170,6 +113,78 @@ const observer = new IntersectionObserver((entries, observer) => {
 }, observerOptions);
 
 observer.observe(intro);
+
+// Scroll Animation
+const scrollAnimation = () => {
+  const cards = document.querySelectorAll('.card');
+  const aboutSection = document.querySelector('.js-aboutSec');
+  const imgCoder = document.querySelector('#js-coder');
+  const programmingLogo = document.querySelector('.programming');
+
+  const positionTop = document.documentElement.scrollTop;
+
+  cards.forEach(card => {
+    // Portfolio Section
+    if (positionTop >= 200 && largeScreen.matches) {
+      addClass(
+        card,
+        'animate__animated',
+        'animate__fadeInRightBig',
+        'animate__slow'
+      );
+      addClass(
+        programmingLogo,
+        'animate__animated',
+        'animate__fadeInLeftBig',
+        'animate__slow'
+      );
+    } else {
+      removeClass(
+        card,
+        'animate__animated',
+        'animate__fadeInRightBig',
+        'animate__slow'
+      );
+      removeClass(
+        programmingLogo,
+        'animate__animated',
+        'animate__fadeInLeftBig',
+        'animate__slow'
+      );
+    }
+  });
+
+  // About Section
+  if (positionTop >= 1158 && largeScreen.matches) {
+    addClass(
+      aboutSection,
+      'animate__animated',
+      'animate__fadeInLeftBig',
+      'animate__slow'
+    );
+
+    addClass(
+      imgCoder,
+      'animate__animated',
+      'animate__fadeInRightBig',
+      'animate__slow'
+    );
+  } else {
+    removeClass(
+      aboutSection,
+      'animate__animated',
+      'animate__fadeInLeftBig',
+      'animate__slow'
+    );
+
+    removeClass(
+      imgCoder,
+      'animate__animated',
+      'animate__fadeInRightBig',
+      'animate__slow'
+    );
+  }
+};
 
 // Event Listener
 hamburgerMenu.addEventListener('click', toggleMenu);
