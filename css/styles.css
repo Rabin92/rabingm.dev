@@ -772,7 +772,7 @@ nav ul li a:hover {
   height: 100%;
   background: rgba(15, 14, 14, 0.9);
   color: #fff;
-  opacity: 0;
+  opacity: 1;
   transition: opacity 0.45s;
   /* Target every direct child of this class */
 }
@@ -787,19 +787,19 @@ nav ul li a:hover {
   transform: translateY(0);
 }
 .section-overlay .info {
+  display: flex;
+  justify-content: space-evenly;
   font-family: "Titillium Web", sans-serif;
   font-weight: 400;
   font-size: 1.3em;
 }
 .section-overlay .info > a {
   font-size: 16px;
-  margin-left: 10px;
+  margin-left: 15px;
   color: #2997ff;
-  text-align: center;
 }
 @media (min-width: 400px) {
   .section-overlay .info > a {
-    margin-left: 20px;
     font-size: 22px;
   }
 }
