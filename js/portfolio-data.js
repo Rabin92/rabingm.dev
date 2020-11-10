@@ -86,12 +86,12 @@ projects.forEach(project => {
                 <a href="${project.live_link}"
                 target="_blank"
                 rel="noopener"
-                >Live Demo</a>
+                >Go live</a>
 
                 <a href="${project.code_link}"
                 target="_blank"
                 rel="noopener"
-                >View Code</a>
+                >View code</a>
             </div>
         </div>
     </div>
