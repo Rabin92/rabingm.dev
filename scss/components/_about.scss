@@ -3,6 +3,7 @@
   @media #{$break-m} {
     margin-top: 20px;
   }
+  overflow: hidden;
   box-shadow: $box-shadow-col 0px 6px 24px 0px,
     rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
   background: $col-white;
@@ -80,6 +81,12 @@
     line-height: 32px;
     letter-spacing: 0.125em;
     font-size: 16px;
+  }
+  svg {
+    @media #{$break-s} {
+      height: 10px;
+    }
+    height: 8px;
   }
   font-size: 12px;
   line-height: 26px;
