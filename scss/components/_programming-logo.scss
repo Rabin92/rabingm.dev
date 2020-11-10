@@ -2,6 +2,7 @@
 .programming {
   @include flexy($j-content: space-evenly, $a-items: center);
   margin-top: 70px;
+  margin-bottom: 50px;
   height: 12vh;
   display: none;
   @media #{$break-l} {
@@ -16,6 +17,10 @@
     height: 40px;
     animation: pulse 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite;
   }
+}
+
+.img-responsive {
+  height: 150px;
 }
 
 /* Animation */
