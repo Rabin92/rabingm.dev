@@ -9,13 +9,13 @@
     @include flexy();
   }
   &_logo {
-    background: rgb(89, 180, 89);
+    background: #9ac457;
     padding: 0.15em;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
       rgba(0, 0, 0, 0.22) 0px 10px 10px;
     border-radius: 50%;
     height: 40px;
-    animation: pulse 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite;
+    animation: pulse 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) 2.5s infinite;
   }
 }
 
