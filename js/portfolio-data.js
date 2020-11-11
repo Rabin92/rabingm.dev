@@ -19,9 +19,9 @@ const projects = [
     code_link: 'https://github.com/Rabin92/techdegree-project8',
     heading: 'Employee Directory',
     description: `
-    An employee directory - communicated with a third-party API
-    (Application Programming Interface). Implemented dark-mode
-    feature.
+    A mockup of employee directory that uses Fetch API to request data of 
+    12 random users (fictional) from the Random User Generator API. 
+    Implemented dark-mode feature.
     `,
   },
   {
@@ -31,7 +31,7 @@ const projects = [
     code_link: 'https://github.com/Rabin92/techdegree-project6',
     heading: 'Game Show App',
     description: `
-    A word guessing game where players will try to guess by entering
+    A word guessing game built with Vanilla Javascript where players will try to guess by entering
     different letters into the program. This game is made for
     desktop screens only.
     `,
@@ -43,7 +43,7 @@ const projects = [
     code_link: 'https://github.com/Rabin92/techdegree-project5',
     heading: 'Photo Gallery',
     description: `
-    An interactive, searchable gallery of photos. Implemented jQuery
+    An interactive, searchable gallery of photos built with CSS flexbox and jQuery. Implemented jQuery
     lightbox plugin for a photo gallery.
     `,
   },
