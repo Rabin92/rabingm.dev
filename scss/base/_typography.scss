@@ -9,9 +9,7 @@
 }
 
 body {
-  font-size: 1em;
-  font-family: 'Roboto Slab', serif;
-  font-weight: 300;
+  font: 300 1em/1.5 'Roboto Slab', serif;
   padding-top: 64px;
   background: #f7f9fb url(../images/wallpaper.png) no-repeat left;
   background-size: cover;
