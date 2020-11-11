@@ -5,7 +5,7 @@ const projects = [
     live_link: 'https://rabin92.github.io/techdegree-project7/',
     code_link: 'https://github.com/Rabin92/techdegree-project7',
     heading: 'Dashboard',
-    intro: `
+    description: `
     An interactive dashboard for a web
     application using advanced web techniques
     including SVG graphics and JavaScript programming.
@@ -18,7 +18,7 @@ const projects = [
     live_link: 'https://rabin92.github.io/techdegree-project8/',
     code_link: 'https://github.com/Rabin92/techdegree-project8',
     heading: 'Employee Directory',
-    intro: `
+    description: `
     An employee directory - communicated with a third-party API
     (Application Programming Interface). Implemented dark-mode
     feature.
@@ -30,7 +30,7 @@ const projects = [
     live_link: 'https://rabin92.github.io/techdegree-project6/',
     code_link: 'https://github.com/Rabin92/techdegree-project6',
     heading: 'Game Show App',
-    intro: `
+    description: `
     A word guessing game where players will try to guess by entering
     different letters into the program. This game is made for
     desktop screens only.
@@ -42,7 +42,7 @@ const projects = [
     live_link: 'https://rabin92.github.io/techdegree-project5/',
     code_link: 'https://github.com/Rabin92/techdegree-project5',
     heading: 'Photo Gallery',
-    intro: `
+    description: `
     An interactive, searchable gallery of photos. Implemented jQuery
     lightbox plugin for a photo gallery.
     `,
@@ -53,7 +53,7 @@ const projects = [
     live_link: 'https://rabin92.github.io/techdegree-project3/',
     code_link: 'https://github.com/Rabin92/techdegree-project3',
     heading: 'Sign Up Form',
-    intro: `
+    description: `
     A responsive, mobile-first registration form using a variety of
     HTML form elements. HTML required attribute added in input
     field.
@@ -65,7 +65,7 @@ const projects = [
     live_link: 'https://rabin92.github.io/techdegree-project4/',
     code_link: 'https://github.com/Rabin92/techdegree-project4',
     heading: 'Web Style Guide',
-    intro: `
+    description: `
     Compiled the provided CSS into SASS to keep the file more
     organised. Utilised variables, mixins, loops and ampersand.
     `,
@@ -97,7 +97,7 @@ projects.forEach(project => {
     </div>
     <div class="section-info">
         <h4>${project.heading}</h4>
-        <p>${project.intro}</p>
+        <p>${project.description}</p>
     </div>
 </div>
 </div>
