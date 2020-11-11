@@ -5,7 +5,7 @@
   margin-bottom: 50px;
   height: 12vh;
   display: none;
-  @media #{$break-l} {
+  @media #{$break-m} {
     @include flexy();
   }
   &_logo {
