@@ -68,12 +68,10 @@ accordions.forEach(accordion => {
 // Intro Animation
 const introHeading = document.querySelector('.intro-content img');
 const introLine = document.querySelector('.intro-name hr');
-const arrow = document.querySelector('.arrow');
 
 if (largeScreen.matches) {
   addClass(introHeading, 'animate__animated', 'animate__rollIn');
   addClass(introLine, 'animate__animated', 'animate__fadeInLeft');
-  addClass(arrow, 'animate__animated', 'animate__backInUp');
 }
 
 // Page Smooth Scroll
