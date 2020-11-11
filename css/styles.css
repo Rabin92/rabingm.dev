@@ -856,7 +856,7 @@ nav ul li a:hover {
   height: 12vh;
   display: none;
 }
-@media (min-width: 1024px) {
+@media (min-width: 900px) {
   .programming {
     display: flex;
   }
