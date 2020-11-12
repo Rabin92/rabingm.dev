@@ -19,7 +19,7 @@ const projects = [
     code_link: 'https://github.com/Rabin92/techdegree-project8',
     heading: 'Employee Directory',
     description: `
-    A mockup of employee directory that uses Fetch API to request data of 
+    An employee directory that uses Fetch API to request data of 
     12 random users (fictional) from the Random User Generator API. 
     Implemented dark-mode feature.
     `,
@@ -55,8 +55,7 @@ const projects = [
     heading: 'Sign Up Form',
     description: `
     A responsive, mobile-first registration form using a variety of
-    HTML form elements. HTML required attribute added in input
-    field.
+    HTML form elements. The required attribute added in input elements.
     `,
   },
   {
@@ -66,8 +65,8 @@ const projects = [
     code_link: 'https://github.com/Rabin92/techdegree-project4',
     heading: 'Web Style Guide',
     description: `
-    Compiled the provided CSS into SASS to keep the file more
-    organised. Utilised variables, mixins, loops and ampersand.
+    With the provided HTML & CSS, I used Sass to keep the file more organised and reduce repetition. 
+    I used features like variables, mixins, nesting and loops. 
     `,
   },
 ];
