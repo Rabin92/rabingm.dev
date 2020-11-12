@@ -24,7 +24,7 @@
   > h1 {
     @include headingFont($font-weight: 700);
     text-align: $align_center;
-    margin: 40px 0;
+    margin: 70px 0;
     position: $relative;
     letter-spacing: 0.071em;
     &::before {
