@@ -67,12 +67,6 @@
   font-size: 14px;
   line-height: 26px;
   letter-spacing: 0.068em;
-  &::first-letter {
-    @include headingFont($font-weight: 400);
-    font-size: 3em;
-    font-weight: 800;
-    color: rgb(88, 88, 88);
-  }
 }
 
 .quote {
@@ -103,4 +97,14 @@ small {
   margin-bottom: 10px;
   padding-bottom: 30px;
   box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+}
+
+.initial {
+  @include headingFont($font-weight: 400);
+  font-weight: 800;
+  color: rgb(88, 88, 88);
+  font-size: 106px;
+  float: left;
+  margin-right: 12px;
+  line-height: 0.83;
 }
