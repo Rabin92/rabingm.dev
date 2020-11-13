@@ -958,13 +958,6 @@ nav ul li a:hover {
     letter-spacing: 0.084em;
   }
 }
-.about-sec::first-letter {
-  font-family: "Titillium Web", sans-serif;
-  font-weight: 400;
-  font-size: 3em;
-  font-weight: 800;
-  color: #585858;
-}
 
 .quote {
   font-size: 12px;
@@ -1000,6 +993,17 @@ small {
   .img-coder {
     margin-bottom: initial;
   }
+}
+
+.initial {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 400;
+  font-weight: 800;
+  color: #585858;
+  font-size: 106px;
+  float: left;
+  margin-right: 12px;
+  line-height: 0.83;
 }
 
 /* ********************************* CURSOR ********************************* */
