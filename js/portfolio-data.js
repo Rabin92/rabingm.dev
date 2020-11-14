@@ -101,5 +101,6 @@ projects.forEach(project => {
 </div>
 </div>
 `;
-  card.innerHTML = html;
 });
+
+card.innerHTML = html;
