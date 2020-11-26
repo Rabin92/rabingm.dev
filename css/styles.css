@@ -667,9 +667,18 @@ nav ul li a:hover {
 /* ********************************* SECTION ******************************** */
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   grid-gap: 25px 40px;
   padding: 1em;
+}
+@media (min-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media (min-width: 1024px) {
@@ -887,11 +896,6 @@ nav ul li a:hover {
   background: #fff;
   padding: 1.5em;
   min-height: 100vh;
-}
-@media (min-width: 900px) {
-  .about {
-    margin-top: 20px;
-  }
 }
 .about > h1 {
   font-family: "Titillium Web", sans-serif;
