@@ -93,9 +93,7 @@ small {
   padding-bottom: 30px;
 
   &-w {
-    @media #{$break-s} {
-      max-width: 300px;
-    }
+    max-width: 300px;
   }
 }
 
