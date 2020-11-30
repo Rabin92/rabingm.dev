@@ -381,8 +381,7 @@ button {
 body {
   font: 300 1em/1.5 "Roboto Slab", serif;
   padding-top: 64px;
-  background: #f7f9fb url(../images/wallpaper.png) no-repeat left;
-  background-size: cover;
+  background-image: linear-gradient(to right bottom, #0d0d0d, #151217, #1d151e, #271723, #321825, #3e1827, #4a1828, #561726, #651424, #741020, #820d19, #8e0e0e);
 }
 
 .container {
@@ -593,6 +592,7 @@ nav ul li a:hover {
 .intro-content .intro-name {
   font-family: "Titillium Web", sans-serif;
   font-weight: 700;
+  color: #fff;
 }
 .intro-content .intro-name > h2 {
   letter-spacing: 0.16em;
@@ -920,8 +920,9 @@ nav ul li a:hover {
 }
 .about-content {
   display: grid;
-  grid-gap: 25px 25px;
+  grid-gap: 25px 100px;
   grid-template-areas: "imgCoder" "aboutContent";
+  justify-items: center;
   padding: 1em;
 }
 @media (min-width: 900px) {
@@ -941,14 +942,6 @@ nav ul li a:hover {
 }
 .grid-area-two {
   grid-area: imgCoder;
-}
-.grid-area-two > img {
-  margin-top: 30px;
-}
-@media (min-width: 900px) {
-  .grid-area-two > img {
-    margin-top: initial;
-  }
 }
 
 .about-sec {
@@ -989,13 +982,20 @@ small {
 }
 
 .img-coder {
+  display: grid;
+  justify-items: center;
+  grid-gap: 20px 0;
   margin-bottom: 10px;
   padding-bottom: 30px;
-  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
 }
 @media (min-width: 900px) {
   .img-coder {
     margin-bottom: initial;
+  }
+}
+@media (min-width: 768px) {
+  .img-coder-w {
+    max-width: 300px;
   }
 }
 
