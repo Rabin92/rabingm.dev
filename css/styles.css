@@ -994,10 +994,8 @@ small {
     margin-bottom: initial;
   }
 }
-@media (min-width: 768px) {
-  .img-coder-w {
-    max-width: 300px;
-  }
+.img-coder-w {
+  max-width: 300px;
 }
 
 .initial {
