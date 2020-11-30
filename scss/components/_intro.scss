@@ -59,13 +59,21 @@
   height: 120px;
   border-radius: 50%;
   background-image: linear-gradient(
-    to top,
-    #4e4f4f,
-    #3b3c3c,
-    #29292a,
-    #181818,
-    #000000
+    to bottom left,
+    #0d0d0d,
+    #151217,
+    #1d151e,
+    #271723,
+    #321825,
+    #3e1827,
+    #4a1828,
+    #561726,
+    #651424,
+    #741020,
+    #820d19,
+    #8e0e0e
   );
+  border: 3px solid $col_white;
   margin-bottom: 30px;
 }
 
