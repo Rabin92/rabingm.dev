@@ -665,6 +665,69 @@ nav ul li a:hover {
     transform: translateY(10px);
   }
 }
+/* ****************************** TESTIMONIALS ****************************** */
+.testimonial {
+  padding: 1em;
+  line-height: 1.5;
+  text-align: center;
+}
+@media (min-width: 900px) {
+  .testimonial {
+    padding: 4em;
+  }
+}
+.testimonial__content {
+  background: #fff;
+  padding: 1em;
+  border-radius: 15px;
+  margin-left: 10px;
+  height: 370px;
+}
+.testimonial__heading {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 700;
+}
+.testimonial__heading--logo::before {
+  content: "";
+  background-image: url(" ../images/logo/treehouse-logo.svg");
+  background-repeat: no-repeat;
+  background-size: 25px 25px;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin-top: 30px;
+}
+.testimonial__feedback {
+  margin: 20px 0;
+}
+.testimonial__footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.testimonial__avatar {
+  height: 65px;
+}
+
+/* ****************************** SLICK STYLES ****************************** */
+.slick-dots {
+  position: static;
+  padding-top: 30px;
+}
+
+.slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+
+.slick-dots li button::before {
+  font-size: 16px;
+  color: #fff;
+}
+
+.slick-dots li.slick-active button::before {
+  color: seagreen;
+}
+
 /* ********************************* SECTION ******************************** */
 .grid-container {
   display: grid;
