@@ -104,3 +104,87 @@ projects.forEach(project => {
 });
 
 card.innerHTML = html;
+
+// Carousel Plugin Content
+
+const sliderContents = [
+  {
+    image: 'avatar.png',
+    alt_text: 'avatar',
+    heading: 'Treehouse',
+    description: `
+    You've put in a lot of work and it shows in your project code!
+    And even better you reached for the exceeds grade and hit all the
+    marks for it! Your project looks great and functions just as expected!
+    `,
+    name: 'Reviewer',
+  },
+
+  {
+    image: 'avatar.png',
+    alt_text: 'avatar',
+    heading: 'Treehouse',
+    description: `
+    What a pleasure to review. Besides the site being aesthetically
+    pleasing, you've added a lot of fine details including small icons.
+    But the details aren't just in your site... they're in your code.
+    `,
+    name: 'Reviewer',
+  },
+
+  {
+    image: 'avatar.png',
+    alt_text: 'avatar',
+    heading: 'Treehouse',
+    description: `
+    Phenomenal job on this one! You have shown a deep understanding of
+    pulling and parsing data from a 3rd party API and manipulating the
+    HTML DOM using JavaScript!
+    `,
+    name: 'Reviewer',
+  },
+
+  {
+    image: 'avatar.png',
+    alt_text: 'avatar',
+    heading: 'Treehouse',
+    description: `
+    Fantastic job on this complex project! You have shown a solid
+    understanding of JavaScript, SASS, localStorage, CSS Grid, and using
+    JS plugins! Keep up the good work and happy coding!
+    `,
+    name: 'Reviewer',
+  },
+
+  {
+    image: 'avatar.png',
+    alt_text: 'avatar',
+    heading: 'Treehouse',
+    description: `
+    Phenomenal job on this final project! You have created a beautifully
+    styled and professional looking portfolio! I really love the page
+    element slide in effects! Your project pop ups looks sharp!
+    `,
+    name: 'Reviewer',
+  },
+];
+
+// Insert data
+const testimonial = document.querySelector('.testimonial');
+let testimonialData = '';
+
+sliderContents.forEach(sliderContent => {
+  testimonialData += `
+<div class="testimonial__content">
+    <h2 class="testimonial__heading testimonial__heading--logo">${sliderContent.heading}</h2>
+    <p class="testimonial__feedback">${sliderContent.description}</p>
+
+  <div class="testimonial__footer">
+      <img class="testimonial__avatar" src=images/${sliderContent.image} alt="${sliderContent.alt_text}">
+      <p class="testimonial__name">${sliderContent.name}</p>
+  </div>
+</div>
+`;
+});
+
+testimonial.innerHTML = testimonialData;
