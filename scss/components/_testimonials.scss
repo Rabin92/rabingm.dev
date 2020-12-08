@@ -1,0 +1,46 @@
+/* ****************************** TESTIMONIALS ****************************** */
+.testimonial {
+  padding: 1em;
+  line-height: 1.5;
+  @media #{$break-m} {
+    padding: 4em;
+  }
+  text-align: center;
+
+  &__content {
+    background: #fff;
+    padding: 1em;
+    border-radius: 15px;
+    margin-left: 10px;
+    height: 370px;
+  }
+
+  &__heading {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 700;
+    &--logo::before {
+      content: '';
+      background-image: url(' ../images/logo/treehouse-logo.svg');
+      background-repeat: no-repeat;
+      background-size: 25px 25px;
+      display: inline-block;
+      width: 25px;
+      height: 25px;
+      margin-top: 30px;
+    }
+  }
+
+  &__feedback {
+    margin: 20px 0;
+  }
+
+  &__footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__avatar {
+    height: 65px;
+  }
+}
