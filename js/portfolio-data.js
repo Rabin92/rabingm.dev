@@ -150,7 +150,7 @@ const sliderContents = [
     heading: 'Treehouse',
     description: `
     Fantastic job on this complex project! You have shown a solid
-    understanding of JavaScript, SASS, localStorage, CSS Grid, and using
+    understanding of JavaScript, Sass, localStorage, CSS Grid, and using
     JS plugins! Keep up the good work and happy coding!
     `,
     name: 'Reviewer',

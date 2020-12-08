@@ -153,7 +153,7 @@ const scrollAnimation = () => {
   });
 
   // About Section
-  if (positionTop >= 1158 && largeScreen.matches) {
+  if (positionTop >= 1890 && largeScreen.matches) {
     addClass(
       aboutSection,
       'animate__animated',
