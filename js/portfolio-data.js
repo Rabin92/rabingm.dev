@@ -109,19 +109,7 @@ card.innerHTML = html;
 
 const sliderContents = [
   {
-    image: 'avatar.png',
-    alt_text: 'avatar',
-    heading: 'Treehouse',
-    description: `
-    You've put in a lot of work and it shows in your project code!
-    And even better you reached for the exceeds grade and hit all the
-    marks for it! Your project looks great and functions just as expected!
-    `,
-    name: 'Reviewer',
-  },
-
-  {
-    image: 'avatar.png',
+    image: 'avatar.svg',
     alt_text: 'avatar',
     heading: 'Treehouse',
     description: `
@@ -129,11 +117,12 @@ const sliderContents = [
     pleasing, you've added a lot of fine details including small icons.
     But the details aren't just in your site... they're in your code.
     `,
+    footerHeader: 'Techdegree',
     name: 'Reviewer',
   },
 
   {
-    image: 'avatar.png',
+    image: 'avatar.svg',
     alt_text: 'avatar',
     heading: 'Treehouse',
     description: `
@@ -141,11 +130,12 @@ const sliderContents = [
     pulling and parsing data from a 3rd party API and manipulating the
     HTML DOM using JavaScript!
     `,
+    footerHeader: 'Techdegree',
     name: 'Reviewer',
   },
 
   {
-    image: 'avatar.png',
+    image: 'avatar.svg',
     alt_text: 'avatar',
     heading: 'Treehouse',
     description: `
@@ -153,18 +143,20 @@ const sliderContents = [
     understanding of JavaScript, Sass, localStorage, CSS Grid, and using
     JS plugins! Keep up the good work and happy coding!
     `,
+    footerHeader: 'Techdegree',
     name: 'Reviewer',
   },
 
   {
-    image: 'avatar.png',
+    image: 'avatar.svg',
     alt_text: 'avatar',
     heading: 'Treehouse',
     description: `
-    Phenomenal job on this final project! You have created a beautifully
+    You have created a beautifully
     styled and professional looking portfolio! I really love the page
     element slide in effects! Your project pop ups looks sharp!
     `,
+    footerHeader: 'Techdegree',
     name: 'Reviewer',
   },
 ];
@@ -179,9 +171,10 @@ sliderContents.forEach(sliderContent => {
     <h2 class="testimonial__heading testimonial__heading--logo">${sliderContent.heading}</h2>
     <p class="testimonial__feedback">${sliderContent.description}</p>
 
-  <div class="testimonial__footer">
+    <div class="testimonial__footer">
       <img class="testimonial__avatar" src=images/${sliderContent.image} alt="${sliderContent.alt_text}">
-      <p class="testimonial__name">${sliderContent.name}</p>
+      <p class="testimonial__header testimonial__header--color">${sliderContent.footerHeader}</p>
+      <p class="testimonial__name testimonial__name--color">${sliderContent.name}</p>
   </div>
 </div>
 `;
