@@ -1,0 +1,15 @@
+/* ****************************** PLACEHOLDERS ****************************** */
+%main-header {
+  letter-spacing: 0.071em;
+  text-align: $align_center;
+  position: $relative;
+  text-transform: uppercase;
+  &::before {
+    content: '';
+    position: $absolute;
+    width: 2.5em;
+    left: calc(50% - 45px);
+    bottom: -15px;
+    border-bottom: 3px solid $primary_col;
+  }
+}
