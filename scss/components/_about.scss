@@ -10,19 +10,9 @@
     @media #{$break-m} {
       margin-bottom: 55px;
     }
+    @extend %main-header;
     @include headingFont($font-weight: 700);
-    letter-spacing: 0.071em;
     margin: 70px 0;
-    text-align: $align_center;
-    position: $relative;
-    &::before {
-      content: '';
-      position: $absolute;
-      width: 2.5em;
-      left: calc(50% - 45px);
-      bottom: -15px;
-      border-bottom: 3px solid $primary_col;
-    }
   }
   &-content {
     display: grid;
@@ -93,7 +83,9 @@ small {
   padding-bottom: 30px;
 
   &-w {
-    max-width: 300px;
+    @media #{$break-xs} {
+      max-width: 300px;
+    }
   }
 }
 

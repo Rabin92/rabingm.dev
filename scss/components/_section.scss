@@ -27,19 +27,9 @@
   padding: 1.5em;
   padding-bottom: 50px;
   > h1 {
+    @extend %main-header;
     @include headingFont($font-weight: 700);
-    text-align: $align_center;
     margin: 70px 0;
-    position: $relative;
-    letter-spacing: 0.071em;
-    &::before {
-      content: '';
-      position: $absolute;
-      width: 2.5em;
-      left: calc(50% - 45px);
-      bottom: -15px;
-      border-bottom: 3px solid $primary_col;
-    }
   }
   &-content {
     border-top: 1px solid $border-col;
