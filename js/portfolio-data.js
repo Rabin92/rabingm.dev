@@ -43,7 +43,7 @@ const projects = [
     code_link: 'https://github.com/Rabin92/techdegree-project5',
     heading: 'Photo Gallery',
     description: `
-    An interactive, searchable gallery of photos built with CSS flexbox and jQuery. Implemented jQuery
+    An interactive, searchable gallery of photos built with CSS flexbox and jQuery. Implemented JavaScript
     lightbox plugin for a photo gallery.
     `,
   },
