@@ -2,7 +2,7 @@
 
 ### Project Description
 
-<p>I built this portfolio from scratch using HTML, CSS and JavaScript. This portfolio was mainy designed to showcase my various work I created.</p>
+<p>I built this portfolio from scratch using HTML, CSS and JavaScript. This portfolio was mainy designed to showcase my various work I created. It's a mobile-first web design.</p>
 
 ### Languages
 
