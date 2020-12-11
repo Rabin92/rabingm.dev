@@ -18,6 +18,7 @@
 .testimonial {
   padding: 1em;
   line-height: 1.5;
+  font-weight: 600;
   @media #{$break-m} {
     padding: 4em;
   }
@@ -27,7 +28,6 @@
     padding: 2em;
     border-radius: 10px;
     margin: 30px 0 0 20px;
-    height: 400px;
   }
 
   &__heading {
@@ -35,8 +35,7 @@
     font-weight: 700;
     &--logo::before {
       content: '';
-      background-image: url(' ../images/logo/treehouse-logo.svg');
-      background-repeat: no-repeat;
+      background: #fff url(' ../images/logo/treehouse-logo.svg') no-repeat;
       display: inline-block;
       width: 30px;
       height: 25px;
@@ -45,6 +44,20 @@
 
   &__feedback {
     margin: 20px 0 30px;
+    height: 200px;
+    @media #{$break-s} {
+      height: 150px;
+    }
+    color: #394d57;
+
+    &::before {
+      content: '';
+      background: #fff url('../images/quote/quote.svg') no-repeat;
+      background-size: 15px 20px;
+      display: inline-block;
+      width: 18px;
+      height: 22px;
+    }
   }
 
   &__footer {
