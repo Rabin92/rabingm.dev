@@ -1,4 +1,4 @@
-# Portfolio
+# Portfolio :open_file_folder:
 
 ### Project Description
 
