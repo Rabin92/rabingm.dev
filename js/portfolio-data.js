@@ -1,6 +1,6 @@
 const projects = [
   {
-    image: 'dashboard.png',
+    image: 'web-app-dashboard.png',
     alt_text: 'dashboard',
     live_link: 'https://rabin92.github.io/techdegree-project7/',
     code_link: 'https://github.com/Rabin92/techdegree-project7',
@@ -9,7 +9,7 @@ const projects = [
     An interactive dashboard for a web
     application using advanced web techniques
     including SVG graphics and JavaScript programming.
-    Implemented local storage to store the user preferences.
+    Implemented localStorage to store the user preferences.
     `,
   },
   {
@@ -48,25 +48,23 @@ const projects = [
     `,
   },
   {
-    image: 'form.png',
-    alt_text: 'Form',
-    live_link: 'https://rabin92.github.io/techdegree-project3/',
-    code_link: 'https://github.com/Rabin92/techdegree-project3',
-    heading: 'Sign Up Form',
+    image: 'featherlite.png',
+    alt_text: 'featherLite',
+    live_link: 'https://feather-lite.vercel.app',
+    code_link: 'https://github.com/Rabin92/featherLITE',
+    heading: 'Note-taking Application',
     description: `
-    A responsive, mobile-first registration form using a variety of
-    HTML form elements. The required attribute added in input elements.
+    A searchable note taking application with modal built with HTML, Sass, and JavaScript.
     `,
   },
   {
-    image: 'sass.png',
-    alt_text: 'Sass',
-    live_link: 'https://rabin92.github.io/techdegree-project4/',
-    code_link: 'https://github.com/Rabin92/techdegree-project4',
-    heading: 'Web Style Guide',
+    image: 'social-media-dashboard.png',
+    alt_text: 'Social-media-dashboard',
+    live_link: 'https://social-media-dashboard.rabin92.vercel.app',
+    code_link: 'https://github.com/Rabin92/Social-Media-Dashboard',
+    heading: 'Social Media Dashboard',
     description: `
-    With the provided HTML & CSS, I used Sass to keep the file more organised and reduce repetition. 
-    I used features like variables, mixins, nesting and loops. 
+    A mobile-first theme switch dashboard which includes a localStorage.
     `,
   },
 ];

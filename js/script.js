@@ -34,8 +34,8 @@ const border = (element, style) => {
 const addClass = (element, classOne, classTwo, classThree) => {
   element.classList.add(classOne, classTwo, classThree);
 };
-const removeClass = (element, classOne, classTwo, classThree) => {
-  element.classList.remove(classOne, classTwo, classThree);
+const removeClass = (element, classOne) => {
+  element.classList.remove(classOne);
 };
 
 // Function - Menu
@@ -136,19 +136,6 @@ const scrollAnimation = () => {
         'animate__fadeInLeftBig',
         'animate__slow'
       );
-    } else {
-      removeClass(
-        card,
-        'animate__animated',
-        'animate__fadeInRightBig',
-        'animate__slow'
-      );
-      removeClass(
-        programmingLogo,
-        'animate__animated',
-        'animate__fadeInLeftBig',
-        'animate__slow'
-      );
     }
   });
 
@@ -162,20 +149,6 @@ const scrollAnimation = () => {
     );
 
     addClass(
-      imgCoder,
-      'animate__animated',
-      'animate__fadeInRightBig',
-      'animate__slow'
-    );
-  } else {
-    removeClass(
-      aboutSection,
-      'animate__animated',
-      'animate__fadeInLeftBig',
-      'animate__slow'
-    );
-
-    removeClass(
       imgCoder,
       'animate__animated',
       'animate__fadeInRightBig',
