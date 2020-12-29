@@ -397,7 +397,7 @@ button {
 body {
   font: 300 1em/1.5 "Roboto Slab", serif;
   padding-top: 64px;
-  background-image: linear-gradient(to right bottom, #0d0d0d, #151217, #1d151e, #271723, #321825, #3e1827, #4a1828, #561726, #651424, #741020, #820d19, #8e0e0e);
+  background-image: linear-gradient(to left top, #000000, #0b0608, #120b10, #171117, #19151e, #1a1a23, #1b1e28, #1c232c, #1f282f, #252d31, #2b3234, #323737);
 }
 
 .container {
@@ -586,12 +586,15 @@ nav ul li a:hover {
 
 /* ********************************** INTRO ********************************* */
 .intro {
+  background: #000 url("../images/wallpaper.png") no-repeat;
+  background-size: cover;
   display: flex;
   align-items: center;
   height: auto;
   min-height: 0;
   color: #000;
   text-align: center;
+  position: relative;
 }
 @media (min-width: 900px) {
   .intro {
@@ -599,7 +602,16 @@ nav ul li a:hover {
     min-height: 100vh;
   }
 }
+.intro-overlay {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.55);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
 .intro-content {
+  z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -655,7 +667,7 @@ nav ul li a:hover {
   margin-top: 30px;
   height: 120px;
   border-radius: 50%;
-  background-image: linear-gradient(to bottom left, #0d0d0d, #151217, #1d151e, #271723, #321825, #3e1827, #4a1828, #561726, #651424, #741020, #820d19, #8e0e0e);
+  background-image: linear-gradient(to right top, #000000, #0b0608, #120b10, #171117, #19151e, #1a1a23, #1b1e28, #1c232c, #1f282f, #252d31, #2b3234, #323737);
   border: 3px solid #fff;
   margin-bottom: 30px;
 }
