@@ -1,5 +1,7 @@
 /* ********************************** INTRO ********************************* */
 .intro {
+  background: $col-black url('../images/wallpaper.png') no-repeat;
+  background-size: cover;
   @include flexy($a-items: center);
   @media #{$break-m} {
     padding: 1em;
@@ -9,7 +11,17 @@
   min-height: 0;
   color: $col-black;
   text-align: $align_center;
+  position: relative;
+  &-overlay {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.55);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
   &-content {
+    z-index: 1;
     @include flexy($f-dir: column, $a-items: center);
     width: 100vw;
     .intro-name {
@@ -59,19 +71,19 @@
   height: 120px;
   border-radius: 50%;
   background-image: linear-gradient(
-    to bottom left,
-    #0d0d0d,
-    #151217,
-    #1d151e,
-    #271723,
-    #321825,
-    #3e1827,
-    #4a1828,
-    #561726,
-    #651424,
-    #741020,
-    #820d19,
-    #8e0e0e
+    to right top,
+    #000000,
+    #0b0608,
+    #120b10,
+    #171117,
+    #19151e,
+    #1a1a23,
+    #1b1e28,
+    #1c232c,
+    #1f282f,
+    #252d31,
+    #2b3234,
+    #323737
   );
   border: 3px solid $col_white;
   margin-bottom: 30px;
