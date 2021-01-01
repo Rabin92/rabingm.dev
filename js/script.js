@@ -157,6 +157,15 @@ const scrollAnimation = () => {
   }
 };
 
+// Date Object
+
+const date = new Date();
+const fullYear = date.getFullYear();
+
+const setYear = document.querySelector('.setYear');
+
+setYear.innerHTML = fullYear;
+
 // Event Listener
 hamburgerMenu.addEventListener('click', toggleMenu);
 navLinks.addEventListener('click', toggleMenu);
