@@ -115,8 +115,7 @@ observer.observe(intro);
 // Scroll Animation
 const scrollAnimation = () => {
   const cards = document.querySelectorAll('.card');
-  const aboutSection = document.querySelector('.js-aboutSec');
-  const imgCoder = document.querySelector('#js-coder');
+  const profileImg = document.querySelector('.js-profile');
   const programmingLogo = document.querySelector('.programming');
 
   const positionTop = document.documentElement.scrollTop;
@@ -140,20 +139,8 @@ const scrollAnimation = () => {
   });
 
   // About Section
-  if (positionTop >= 1890 && largeScreen.matches) {
-    addClass(
-      aboutSection,
-      'animate__animated',
-      'animate__fadeInLeftBig',
-      'animate__slow'
-    );
-
-    addClass(
-      imgCoder,
-      'animate__animated',
-      'animate__fadeInRightBig',
-      'animate__slow'
-    );
+  if (positionTop >= 1990 && largeScreen.matches) {
+    addClass(profileImg, 'animate__animated', 'animate__rollIn');
   }
 };
 
@@ -163,7 +150,6 @@ const date = new Date();
 const fullYear = date.getFullYear();
 
 const setYear = document.querySelector('.setYear');
-
 setYear.innerHTML = fullYear;
 
 // Event Listener

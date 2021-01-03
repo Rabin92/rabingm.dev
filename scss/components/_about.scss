@@ -14,87 +14,30 @@
     @include headingFont($font-weight: 700);
     margin: 70px 0;
   }
-  &-content {
-    display: grid;
-    grid-gap: 25px 100px;
-    grid-template-areas:
-      'imgCoder'
-      'aboutContent';
-    justify-items: center;
-    padding: 1em;
-    @media #{$break-m} {
-      grid-template-areas: 'aboutContent imgCoder';
-    }
+  &__content {
+    max-width: 900px;
+    margin: 0 auto;
   }
-}
 
-.flex-container {
-  @include flexy($f-dir: column, $j-content: center);
-}
-
-.grid-area {
-  &-one {
-    grid-area: aboutContent;
+  &__img {
+    text-align: center;
+    margin-bottom: 35px;
   }
-  &-two {
-    grid-area: imgCoder;
+  &__profile-img {
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
   }
-}
-
-.about-sec {
-  @media #{$break-xs} {
-    font-size: 1em;
-    letter-spacing: 0.084em;
+  &__heading {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 3em;
+    line-height: 1.4;
   }
-  font-size: 14px;
-  line-height: 26px;
-  letter-spacing: 0.068em;
-}
-
-.quote {
-  @media #{$break-xs} {
-    font-size: 1em;
+  &__body {
+    margin-top: 30px;
   }
-  svg {
-    @media #{$break-s} {
-      height: 10px;
-    }
-    height: 8px;
+  &__bio {
+    margin-bottom: 30px;
+    line-height: 1.7;
   }
-  font-size: 12px;
-  letter-spacing: 0.071em;
-  text-transform: uppercase;
-  color: rgb(89, 89, 89);
-  text-align: $align_center;
-}
-
-small {
-  line-height: 30px;
-}
-
-.img-coder {
-  @media #{$break-m} {
-    margin-bottom: initial;
-  }
-  display: grid;
-  justify-items: center;
-  grid-gap: 20px 0;
-  margin-bottom: 10px;
-  padding-bottom: 30px;
-
-  &-w {
-    @media #{$break-xs} {
-      max-width: 300px;
-    }
-  }
-}
-
-.initial {
-  @include headingFont($font-weight: 400);
-  font-weight: 800;
-  color: rgb(88, 88, 88);
-  font-size: 106px;
-  float: left;
-  margin-right: 12px;
-  line-height: 0.83;
 }
