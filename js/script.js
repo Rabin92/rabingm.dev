@@ -115,7 +115,7 @@ observer.observe(intro);
 // Scroll Animation
 const scrollAnimation = () => {
   const cards = document.querySelectorAll('.card');
-  const profileImg = document.querySelector('.js-profile');
+  const profileImg = document.querySelector('.about__profile-img');
   const programmingLogo = document.querySelector('.programming');
 
   const positionTop = document.documentElement.scrollTop;
@@ -139,7 +139,7 @@ const scrollAnimation = () => {
   });
 
   // About Section
-  if (positionTop >= 1990 && largeScreen.matches) {
+  if (positionTop >= 2130 && largeScreen.matches) {
     addClass(profileImg, 'animate__animated', 'animate__rollIn');
   }
 };
