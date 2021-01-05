@@ -114,13 +114,13 @@ const sliderContents = [
     `,
   },
 
-  {
-    description: `
-    Phenomenal job on this one! You have shown a deep understanding of
-    pulling and parsing data from a 3<sup>rd</sup> party API and manipulating the
-    HTML DOM using JavaScript!
-    `,
-  },
+  // {
+  //   description: `
+  //   Phenomenal job on this one! You have shown a deep understanding of
+  //   pulling and parsing data from a 3<sup>rd</sup> party API and manipulating the
+  //   HTML DOM using JavaScript!
+  //   `,
+  // },
 
   {
     description: `
