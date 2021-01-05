@@ -113,15 +113,6 @@ const sliderContents = [
     But the details aren't just in your site... they're in your code.
     `,
   },
-
-  // {
-  //   description: `
-  //   Phenomenal job on this one! You have shown a deep understanding of
-  //   pulling and parsing data from a 3<sup>rd</sup> party API and manipulating the
-  //   HTML DOM using JavaScript!
-  //   `,
-  // },
-
   {
     description: `
     Fantastic job on this complex project! You have shown a solid
@@ -129,7 +120,6 @@ const sliderContents = [
     JS plugins! Keep up the good work and happy coding!
     `,
   },
-
   {
     description: `
     You have created a beautifully
