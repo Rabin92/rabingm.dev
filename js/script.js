@@ -8,9 +8,7 @@ const body = document.querySelector('body');
 const accordions = document.querySelectorAll('.section-info');
 
 // Color
-const colWhite = '#fff';
-const colBlack = '#000';
-const colSeaGreen = '#2e8b57';
+const colors = ['#fff', '#000'];
 
 // Media Query
 const largeScreen = window.matchMedia('(min-width: 1024px)');
@@ -95,14 +93,14 @@ const observer = new IntersectionObserver((entries, observer) => {
     if (!entry.isIntersecting) {
       addClass(header, 'nav-scrolled');
       links.forEach(link => {
-        color(link, colWhite);
+        color(link, colors[0]);
       });
       border(logo, '2px solid white');
-      color(logo, colWhite);
+      color(logo, colors[0]);
     } else {
       removeClass(header, 'nav-scrolled');
       links.forEach(link => {
-        color(link, colBlack);
+        color(link, colors[1]);
       });
       border(logo, '');
       color(logo, '');
