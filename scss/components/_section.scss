@@ -137,10 +137,12 @@
 .active p {
   @media #{$break-s} {
     animation: slide 0.6s ease-in-out forwards;
+    text-align: left;
   }
   @media #{$break-xs} {
     font-size: 16px;
   }
+  text-align: center;
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
   font-size: 14px;
