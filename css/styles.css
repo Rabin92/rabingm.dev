@@ -939,6 +939,7 @@ nav ul li a:hover {
 }
 
 .active p {
+  text-align: center;
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
   font-size: 14px;
@@ -952,6 +953,7 @@ nav ul li a:hover {
 @media (min-width: 768px) {
   .active p {
     animation: slide 0.6s ease-in-out forwards;
+    text-align: left;
   }
 }
 @media (min-width: 400px) {
