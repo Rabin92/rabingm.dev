@@ -17,8 +17,6 @@ nav {
         border-bottom: none;
       }
       a {
-        font-family: 'Titillium Web', sans-serif;
-        font-weight: 400;
         letter-spacing: 0.203em;
         color: $col_white;
         text-transform: uppercase;
@@ -43,11 +41,11 @@ nav {
       background: $primary_col;
       &:last-child a {
         color: #fff !important;
+        text-decoration: none;
       }
     }
+
     a {
-      font-family: 'Titillium Web', sans-serif;
-      font-weight: 400;
       font-size: 14px;
       letter-spacing: 0.112em;
       &:hover {
