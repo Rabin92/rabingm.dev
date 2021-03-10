@@ -1,15 +1,15 @@
 /* ******************************* TYPOGRAPHY ******************************* */
 
 // Google fonts
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap');
-
 * {
   box-sizing: border-box;
 }
 
 body {
-  font: 300 1em/1.5 'Roboto Slab', serif;
+  // font: 300 1em/1.5 'Roboto Slab', serif;
+  font: 300 1em/1.5 'Rubik', sans-serif;
   padding-top: 64px;
   background-image: linear-gradient(
     to left top,
