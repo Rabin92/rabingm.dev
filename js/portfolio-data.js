@@ -74,18 +74,27 @@ const card = document.querySelector('.grid-container');
 let html = '';
 
 projects.forEach(project => {
+  const {
+    image,
+    alt_text,
+    live_link,
+    code_link,
+    heading,
+    description,
+  } = project;
+
   html += `
 <div class="card">
     <div class="section-content">
-        <img class="img-portfolio" src=images/portfolio_img/${project.image} alt="${project.alt_text}">
+        <img class="img-portfolio" src=images/portfolio_img/${image} alt="${alt_text}">
         <div class="section-overlay section-overlay-blur">
             <div class="info">
-                <a href="${project.live_link}"
+                <a href="${live_link}"
                 target="_blank"
                 rel="noopener"
                 >Go live</a>
 
-                <a href="${project.code_link}"
+                <a href="${code_link}"
                 target="_blank"
                 rel="noopener"
                 >View code</a>
@@ -93,8 +102,8 @@ projects.forEach(project => {
         </div>
     </div>
     <div class="section-info">
-        <h4>${project.heading}</h4>
-        <p>${project.description}</p>
+        <h4>${heading}</h4>
+        <p>${description}</p>
     </div>
 </div>
 </div>
@@ -134,10 +143,12 @@ const testimonial = document.querySelector('.testimonial');
 let testimonialData = '';
 
 sliderContents.forEach(sliderContent => {
+  const { description } = sliderContent;
+
   testimonialData += `
 <div class="testimonial__content">
     <h2 class="testimonial__heading testimonial__heading--logo">Treehouse</h2>
-    <p class="testimonial__feedback">${sliderContent.description}</p>
+    <p class="testimonial__feedback">${description}</p>
     <div class="testimonial__footer">
       <img class="testimonial__avatar" src=images/avatar.svg alt="avatar">
       <p class="testimonial__header testimonial__header--color">Techdegree</p>
