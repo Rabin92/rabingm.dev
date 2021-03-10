@@ -136,11 +136,6 @@ const scrollAnimation = () => {
       );
     }
   });
-
-  // About Section
-  if (positionTop >= 2130 && largeScreen.matches) {
-    addClass(profileImg, 'animate__animated', 'animate__rollIn');
-  }
 };
 
 // Date Object
