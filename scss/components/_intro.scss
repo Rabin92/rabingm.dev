@@ -25,7 +25,6 @@
     @include flexy($f-dir: column, $a-items: center);
     width: 100vw;
     .intro-name {
-      @include headingFont($font-weight: 700);
       color: #fff;
       > h2 {
         @media #{$break-m} {
@@ -49,7 +48,6 @@
     line-height: 22px;
     padding: 0.7em;
   }
-  @include headingFont($font-weight: 400);
   font-size: 18px;
   letter-spacing: 0.115em;
   line-height: 20px;
