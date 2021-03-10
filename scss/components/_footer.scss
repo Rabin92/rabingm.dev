@@ -1,6 +1,5 @@
 /* ********************************* FOOTER ********************************* */
 footer {
-  @include headingFont($font-weight: 400);
   @media #{$break-xs} {
     font-size: 14px;
   }
