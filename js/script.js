@@ -99,6 +99,7 @@ const observer = new IntersectionObserver((entries, observer) => {
       color(logo, colors[0]);
     } else {
       removeClass(header, 'nav-scrolled');
+      addClass(header, 'nav-scrolled-top');
       links.forEach(link => {
         color(link, colors[1]);
       });

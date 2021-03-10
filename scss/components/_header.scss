@@ -26,3 +26,7 @@ header {
   background: $secondary_col;
   transition: all 0.8s cubic-bezier(0.86, 0, 0.07, 1);
 }
+
+.nav-scrolled-top {
+  transition: all 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+}
