@@ -492,6 +492,7 @@ nav ul li a:hover {
   align-self: center;
 }
 .lg-navbar ul li {
+  position: relative;
   display: none;
   margin-left: 4px;
   padding: 10px;
@@ -503,12 +504,26 @@ nav ul li a:hover {
   color: #fff !important;
   text-decoration: none;
 }
+.lg-navbar ul li:last-child:last-child a::after {
+  display: none;
+}
 .lg-navbar ul li a {
   font-size: 14px;
   letter-spacing: 0.112em;
 }
-.lg-navbar ul li a:hover {
-  text-decoration: underline;
+.lg-navbar ul li a::after {
+  content: "";
+  position: absolute;
+  display: block;
+  border: 2px solid seagreen;
+  margin-top: 5px;
+  width: 25%;
+  right: 38%;
+  opacity: 0;
+}
+.lg-navbar ul li a:hover::after {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
 }
 @media (min-width: 768px) {
   .lg-navbar ul li {
