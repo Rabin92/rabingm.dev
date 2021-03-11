@@ -9,6 +9,7 @@ const accordions = document.querySelectorAll('.section-info');
 
 // Color
 const colors = ['#fff', '#000'];
+[white, black] = colors;
 
 // Media Query
 const largeScreen = window.matchMedia('(min-width: 1024px)');
@@ -93,15 +94,15 @@ const observer = new IntersectionObserver((entries, observer) => {
     if (!entry.isIntersecting) {
       addClass(header, 'nav-scrolled');
       links.forEach(link => {
-        color(link, colors[0]);
+        color(link, white);
       });
       border(logo, '2px solid white');
-      color(logo, colors[0]);
+      color(logo, white);
     } else {
       removeClass(header, 'nav-scrolled');
       addClass(header, 'nav-scrolled-top');
       links.forEach(link => {
-        color(link, colors[1]);
+        color(link, black);
       });
       border(logo, '');
       color(logo, '');
