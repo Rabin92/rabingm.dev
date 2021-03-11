@@ -1,7 +1,5 @@
 // Variables
 const hamburgerMenu = document.querySelector('#js-menu_btn');
-let menuOpen = false;
-
 const nav = document.querySelector('#js-nav');
 const navLinks = document.querySelector('#js-links');
 const body = document.querySelector('body');
@@ -45,15 +43,11 @@ const toggleMenu = () => {
     display(nav, 'block');
     animate(nav, 'slideDown 0.9s ease-in-out forwards');
     overflow(body, 'hidden');
-
-    hamburgerMenu.classList.add('open');
-    menuOpen = true;
+    addClass(hamburgerMenu, 'active');
   } else {
     animate(nav, 'slideUp 0.4s ease-in-out forwards');
     overflow(body, 'auto');
-
-    hamburgerMenu.classList.remove('open');
-    menuOpen = false;
+    removeClass(hamburgerMenu, 'active');
   }
 };
 
@@ -84,6 +78,7 @@ const header = document.querySelector('.header');
 const intro = document.querySelector('.intro');
 const links = document.querySelectorAll('.lg-navbar a');
 const logo = document.querySelector('.logo');
+const menuLines = hamburgerMenu.children;
 
 const observerOptions = {
   rootMargin: '-65px 0px 0px 0px',
@@ -93,6 +88,9 @@ const observer = new IntersectionObserver((entries, observer) => {
   entries.forEach(entry => {
     if (!entry.isIntersecting) {
       addClass(header, 'nav-scrolled');
+      for (let i = 0; i < menuLines.length; i++) {
+        menuLines[i].style.border = `1px solid ${white}`;
+      }
       links.forEach(link => {
         color(link, white);
       });
@@ -101,6 +99,9 @@ const observer = new IntersectionObserver((entries, observer) => {
     } else {
       removeClass(header, 'nav-scrolled');
       addClass(header, 'nav-scrolled-top');
+      for (let i = 0; i < menuLines.length; i++) {
+        menuLines[i].style.border = `1px solid ${black}`;
+      }
       links.forEach(link => {
         color(link, black);
       });
