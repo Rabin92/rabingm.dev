@@ -33,6 +33,7 @@ nav {
 .lg-navbar {
   @include flexy($dsp: null, $a-self: center);
   ul li {
+    position: relative;
     display: none;
     margin-left: 4px;
     padding: 10px;
@@ -41,14 +42,31 @@ nav {
       &:last-child a {
         color: #fff !important;
         text-decoration: none;
+
+        &::after {
+          display: none;
+        }
       }
     }
 
     a {
       font-size: 14px;
       letter-spacing: 0.112em;
-      &:hover {
-        text-decoration: underline;
+
+      &::after {
+        content: '';
+        position: absolute;
+        display: block;
+        border: 2px solid $primary_col;
+        margin-top: 5px;
+        width: 25%;
+        right: 38%;
+        opacity: 0;
+      }
+
+      &:hover::after {
+        opacity: 1;
+        transition: opacity 0.5s ease-in-out;
       }
     }
     @media #{$break-s} {
