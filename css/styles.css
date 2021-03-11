@@ -490,7 +490,6 @@ nav ul li a:hover {
 }
 .lg-navbar ul li:last-child {
   border-radius: 5px;
-  background: seagreen;
 }
 .lg-navbar ul li:last-child:last-child a {
   color: #fff !important;
