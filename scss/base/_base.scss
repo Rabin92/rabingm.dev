@@ -29,7 +29,7 @@ body {
 }
 
 .container {
-  @include flexy($j-content: space-between);
+  @include flexy($j-content: space-between, $a-items: center);
   @media #{$break-l} {
     width: 85%;
     margin: 0 auto;
