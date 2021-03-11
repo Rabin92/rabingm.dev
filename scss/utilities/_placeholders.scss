@@ -13,3 +13,10 @@
     border-bottom: 3px solid $primary_col;
   }
 }
+
+%menu {
+  border: 1px solid #000;
+  width: 30px;
+  margin-bottom: 0.4em;
+  transition: all 0.4s ease-in-out;
+}
