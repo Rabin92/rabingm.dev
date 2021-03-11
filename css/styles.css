@@ -602,7 +602,7 @@ nav ul li a:hover {
 }
 .intro-overlay {
   position: absolute;
-  background: rgba(0, 0, 0, 0.55);
+  background: rgba(0, 0, 0, 0.4);
   top: 0;
   bottom: 0;
   left: 0;
