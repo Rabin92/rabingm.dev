@@ -17,6 +17,13 @@
   border-bottom: 3px solid seagreen;
 }
 
+.menu__third, .menu__middle, .menu__first {
+  border: 1px solid #000;
+  width: 30px;
+  margin-bottom: 0.4em;
+  transition: all 0.4s ease-in-out;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -403,6 +410,7 @@ body {
 .container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 0.75em;
 }
 @media (min-width: 1024px) {
@@ -533,53 +541,34 @@ nav ul li a:hover {
   }
 }
 /* ******************************** MENU BTN ******************************** */
-.menu-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  width: 50px;
+.menu {
+  cursor: pointer;
 }
 @media (min-width: 768px) {
-  .menu-btn {
+  .menu {
     display: none;
   }
 }
-.menu-btn_burger {
-  width: 40px;
-  height: 3px;
-  background: #9696b0;
+.menu__third {
+  margin-bottom: initial;
+}
+
+.active .menu__first {
+  transform-origin: center center;
+  transform: rotate(45deg) translate(0, 14px);
   transition: all 0.5s ease-in-out;
 }
-.menu-btn_burger::before, .menu-btn_burger::after {
-  content: "";
-  position: absolute;
-  width: 40px;
-  height: 3px;
-  background: #9696b0;
-  border-radius: 5px;
+
+.active .menu__middle {
+  transform: translateX(10px);
+  opacity: 0;
   transition: all 0.5s ease-in-out;
 }
-.menu-btn_burger::before {
-  transform: translateY(-10px);
-}
-.menu-btn_burger::after {
-  transform: translateY(10px);
-}
 
-/* Animation */
-.menu-btn.open .menu-btn_burger {
-  transform: translateX(-50px);
-  background: transparent;
-  box-shadow: none;
-}
-
-.menu-btn.open .menu-btn_burger::before {
-  transform: rotate(45deg) translate(35px, -35px);
-}
-
-.menu-btn.open .menu-btn_burger::after {
-  transform: rotate(-45deg) translate(35px, 35px);
+.active .menu__third {
+  transform-origin: center center;
+  transform: rotate(-45deg) translate(-2px, -12px);
+  transition: all 0.5s ease-in-out;
 }
 
 /* ********************************** INTRO ********************************* */
