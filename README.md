@@ -36,7 +36,7 @@
 - Mobile-first Responsive Design
 - SVG
 
-### Built with
+### Tools used
 
 - Visual Studio Code
 - Git
