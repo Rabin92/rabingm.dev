@@ -1,24 +1,62 @@
 # Portfolio :open_file_folder:
 
-### Project Description
+## Table of contents
 
-<p>I built this portfolio from scratch using HTML, CSS and JavaScript. This portfolio was mainy designed to showcase my various work I created. It's a mobile-first web design.</p>
+- [Overview](#overview)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [Tools used](#tools-used)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Plugins](#Plugins)
+- [Author](#author)
 
-### Languages
+## Overview
 
-* HTML5
-* Sass
-* JavaScript
-* SVG
+### Screenshot
 
-### Tools
+![](./images/screenshot.png)
 
-* Visual Studio Code
-* Git
+### Links
 
-### JavaScript Plugins
+- Solution URL: [View Code](https://github.com/Rabin92/rabingm.dev)
+- Live Site URL: [Go Live](https://www.rabingm.dev/)
 
-* Slick - https://kenwheeler.github.io/slick/
-* Animate - https://animate.style
-* Smooth Scroll - https://github.com/cferdinandi/smooth-scroll
+## My process
 
+### Built with
+
+- Semantic HTML5 markup
+- Sass
+- [JavaScript](https://javascript.info) - Vanilla JS
+- [Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) - CSS Flexbox
+- [Grid](https://css-tricks.com/snippets/css/complete-guide-grid/) - CSS Grid
+- Mobile-first Responsive Design
+- SVG
+
+### Built with
+
+- Visual Studio Code
+- Git
+- GitHub
+
+### What I learned
+
+I learned how to implement different plugins on a page to create a best user experience.
+
+### Continued development
+
+I will continue learning about JavaScript programming language.
+
+### Plugins
+
+- [Slick](https://kenwheeler.github.io/slick/)
+- [Animate](https://animate.style)
+- [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
+
+## Author
+
+- Website - [Rabin Gharti Magar](https://www.rabingm.dev/)
+- Frontend Mentor - [@Rabin92](https://www.frontendmentor.io/profile/Rabin92)
