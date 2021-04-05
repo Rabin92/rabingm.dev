@@ -4,9 +4,6 @@
   @media #{$break-s} {
     grid-template-columns: repeat(2, 1fr);
   }
-  @media #{$break-l} {
-    grid-template-columns: repeat(3, 1fr);
-  }
   grid-gap: 25px 40px;
   padding: 1em;
 }
