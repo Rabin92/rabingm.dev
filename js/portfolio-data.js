@@ -62,9 +62,9 @@ const projects = [
     alt_text: '',
     live_link: 'https://apple-homepage-clone-git-main-rabin92.vercel.app',
     code_link: 'https://github.com/Rabin92/apple-homepage-clone',
-    heading: 'Apple Homepage Clone',
+    heading: 'Apple Homepage Clone (UK)',
     description: `
-    I cloned Apple homepage using HTML5, Sass, and vanilla JS. 
+    A clone of a Apple Homepage (UK) created using HTML5, Sass, and vanilla JS. 
     `,
   },
 ];
