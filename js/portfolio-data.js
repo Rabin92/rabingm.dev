@@ -1,7 +1,7 @@
 const projects = [
   {
     image: 'web-app-dashboard.png',
-    alt_text: 'dashboard',
+    alt_text: '',
     live_link: 'https://rabin92.github.io/techdegree-project7/',
     code_link: 'https://github.com/Rabin92/techdegree-project7',
     heading: 'Dashboard',
@@ -14,7 +14,7 @@ const projects = [
   },
   {
     image: 'employee-dir.png',
-    alt_text: 'employee-directory',
+    alt_text: '',
     live_link: 'https://rabin92.github.io/techdegree-project8/',
     code_link: 'https://github.com/Rabin92/techdegree-project8',
     heading: 'Employee Directory',
@@ -26,7 +26,7 @@ const projects = [
   },
   {
     image: 'guess_game.png',
-    alt_text: 'guessing-game',
+    alt_text: '',
     live_link: 'https://rabin92.github.io/techdegree-project6/',
     code_link: 'https://github.com/Rabin92/techdegree-project6',
     heading: 'Game Show App',
@@ -38,7 +38,7 @@ const projects = [
   },
   {
     image: 'photo_gallery.png',
-    alt_text: 'photo-gallery',
+    alt_text: '',
     live_link: 'https://rabin92.github.io/techdegree-project5/',
     code_link: 'https://github.com/Rabin92/techdegree-project5',
     heading: 'Photo Gallery',
@@ -49,7 +49,7 @@ const projects = [
   },
   {
     image: 'featherlite.png',
-    alt_text: 'featherLite',
+    alt_text: '',
     live_link: 'https://feather-lite.vercel.app',
     code_link: 'https://github.com/Rabin92/featherLITE',
     heading: 'Note-taking Application',
@@ -58,13 +58,13 @@ const projects = [
     `,
   },
   {
-    image: 'social-media-dashboard.png',
-    alt_text: 'Social-media-dashboard',
-    live_link: 'https://social-media-dashboard.rabin92.vercel.app',
-    code_link: 'https://github.com/Rabin92/Social-Media-Dashboard',
-    heading: 'Social Media Dashboard',
+    image: 'apple_homepage_clone.png',
+    alt_text: '',
+    live_link: 'https://apple-homepage-clone-git-main-rabin92.vercel.app',
+    code_link: 'https://github.com/Rabin92/apple-homepage-clone',
+    heading: 'Apple Homepage Clone',
     description: `
-    A mobile-first theme switch dashboard which includes a localStorage.
+    I cloned Apple homepage using HTML5, Sass, and vanilla JS. 
     `,
   },
 ];
