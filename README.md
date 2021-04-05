@@ -44,7 +44,7 @@
 
 ### What I learned
 
-I learned how to implement different plugins on a page to create a best user experience.
+I learned how to implement different plugins on a page and customise to create a best user experience.
 
 ### Continued development
 
