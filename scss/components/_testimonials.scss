@@ -31,12 +31,12 @@
   }
 
   &__heading {
+    @include flexy($a-items: center, $j-content: center);
     font-family: 'Titillium Web', sans-serif;
     font-weight: 700;
     &--logo::before {
       content: '';
       background: #fff url(' ../images/logo/treehouse-logo.svg') no-repeat;
-      display: inline-block;
       width: 30px;
       height: 25px;
     }
