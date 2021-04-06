@@ -671,15 +671,11 @@ nav ul li a:hover {
 }
 
 .down-arrow {
+  margin-top: 90px;
+  height: 65px;
+  animation: slideArrow 0.9s ease-in-out infinite;
   height: 50px;
   margin-top: 70px;
-}
-@media (min-width: 900px) {
-  .down-arrow {
-    margin-top: 90px;
-    height: 65px;
-    animation: slideArrow 0.9s ease-in-out infinite;
-  }
 }
 
 /* Animation */
