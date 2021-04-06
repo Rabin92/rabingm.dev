@@ -725,13 +725,15 @@ nav ul li a:hover {
   margin: 30px 0 0 20px;
 }
 .testimonial__heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: "Titillium Web", sans-serif;
   font-weight: 700;
 }
 .testimonial__heading--logo::before {
   content: "";
   background: #fff url(" ../images/logo/treehouse-logo.svg") no-repeat;
-  display: inline-block;
   width: 30px;
   height: 25px;
 }
