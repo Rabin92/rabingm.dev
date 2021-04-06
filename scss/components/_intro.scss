@@ -88,11 +88,9 @@
 }
 
 .down-arrow {
-  @media #{$break-m} {
-    margin-top: 90px;
-    height: 65px;
-    animation: slideArrow 0.9s ease-in-out infinite;
-  }
+  margin-top: 90px;
+  height: 65px;
+  animation: slideArrow 0.9s ease-in-out infinite;
   height: 50px;
   margin-top: 70px;
 }
