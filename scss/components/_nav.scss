@@ -35,8 +35,6 @@ nav {
   ul li {
     position: relative;
     display: none;
-    margin-left: 4px;
-    padding: 10px;
     &:last-child {
       border-radius: 5px;
       &:last-child a {
@@ -52,22 +50,7 @@ nav {
     a {
       font-size: 14px;
       letter-spacing: 0.112em;
-
-      &::after {
-        content: '';
-        position: absolute;
-        display: block;
-        border: 2px solid $primary_col;
-        margin-top: 5px;
-        width: 25%;
-        right: 38%;
-        opacity: 0;
-      }
-
-      &:hover::after {
-        opacity: 1;
-        transition: opacity 0.5s ease-in-out;
-      }
+      padding: 10px;
     }
     @media #{$break-s} {
       display: inline-block;
@@ -98,5 +81,21 @@ nav {
   100% {
     height: 0;
     opacity: 0;
+  }
+}
+
+.active-link {
+  @media #{$break-s} {
+    &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      border: 2px solid $primary_col;
+      margin-top: 15px;
+      width: 25%;
+      right: 38%;
+      opacity: 1;
+      transform: skew(-12deg) translateX(10%);
+    }
   }
 }
