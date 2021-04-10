@@ -494,8 +494,6 @@ nav ul li a:hover {
 .lg-navbar ul li {
   position: relative;
   display: none;
-  margin-left: 4px;
-  padding: 10px;
 }
 .lg-navbar ul li:last-child {
   border-radius: 5px;
@@ -510,20 +508,7 @@ nav ul li a:hover {
 .lg-navbar ul li a {
   font-size: 14px;
   letter-spacing: 0.112em;
-}
-.lg-navbar ul li a::after {
-  content: "";
-  position: absolute;
-  display: block;
-  border: 2px solid seagreen;
-  margin-top: 5px;
-  width: 25%;
-  right: 38%;
-  opacity: 0;
-}
-.lg-navbar ul li a:hover::after {
-  opacity: 1;
-  transition: opacity 0.5s ease-in-out;
+  padding: 10px;
 }
 @media (min-width: 768px) {
   .lg-navbar ul li {
@@ -555,6 +540,20 @@ nav ul li a:hover {
     opacity: 0;
   }
 }
+@media (min-width: 768px) {
+  .active-link::after {
+    content: "";
+    position: absolute;
+    display: block;
+    border: 2px solid seagreen;
+    margin-top: 15px;
+    width: 25%;
+    right: 38%;
+    opacity: 1;
+    transform: skew(-12deg) translateX(10%);
+  }
+}
+
 /* ******************************** MENU BTN ******************************** */
 .menu {
   cursor: pointer;
