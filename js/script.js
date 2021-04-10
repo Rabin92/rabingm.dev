@@ -35,6 +35,19 @@ const removeClass = (element, classOne) => {
   element.classList.remove(classOne);
 };
 
+const navbar = document.querySelector('#js-navbar');
+const navbarLi = navbar.querySelectorAll('li a');
+
+navbarLi[0].classList.add('active-link');
+
+navbar.addEventListener('click', e => {
+  for (let i = 0; i < navbarLi.length; i++) {
+    e.target === navbarLi[i]
+      ? navbarLi[i].classList.add('active-link')
+      : navbarLi[i].classList.remove('active-link');
+  }
+});
+
 // Function - Menu
 const toggleMenu = () => {
   nav.classList.toggle('show');
