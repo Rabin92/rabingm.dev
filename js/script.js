@@ -4,6 +4,8 @@ const nav = document.querySelector('#js-nav');
 const navLinks = document.querySelector('#js-links');
 const body = document.querySelector('body');
 const accordions = document.querySelectorAll('.section-info');
+const navbar = document.querySelector('#js-navbar');
+const navbarLi = navbar.querySelectorAll('li a');
 
 // Color
 const colors = ['#fff', '#000'];
@@ -35,18 +37,23 @@ const removeClass = (element, classOne) => {
   element.classList.remove(classOne);
 };
 
-const navbar = document.querySelector('#js-navbar');
-const navbarLi = navbar.querySelectorAll('li a');
+addClass(navbarLi[0], 'active-link');
 
-navbarLi[0].classList.add('active-link');
+const activeLinkBorder = () => {
+  const yAxis = document.documentElement.scrollTop;
 
-navbar.addEventListener('click', e => {
-  for (let i = 0; i < navbarLi.length; i++) {
-    e.target === navbarLi[i]
-      ? navbarLi[i].classList.add('active-link')
-      : navbarLi[i].classList.remove('active-link');
-  }
-});
+  yAxis >= 0 && yAxis <= 600
+    ? addClass(navbarLi[0], 'active-link')
+    : removeClass(navbarLi[0], 'active-link');
+
+  yAxis >= 600 && yAxis <= 2000
+    ? addClass(navbarLi[1], 'active-link')
+    : removeClass(navbarLi[1], 'active-link');
+
+  yAxis >= 2500 && yAxis <= 3400
+    ? addClass(navbarLi[2], 'active-link')
+    : removeClass(navbarLi[2], 'active-link');
+};
 
 // Function - Menu
 const toggleMenu = () => {
@@ -129,9 +136,7 @@ observer.observe(intro);
 // Scroll Animation
 const scrollAnimation = () => {
   const cards = document.querySelectorAll('.card');
-  const profileImg = document.querySelector('.about__profile-img');
   const programmingLogo = document.querySelector('.programming');
-
   const positionTop = document.documentElement.scrollTop;
 
   cards.forEach(card => {
@@ -165,3 +170,4 @@ setYear.innerHTML = fullYear;
 hamburgerMenu.addEventListener('click', toggleMenu);
 navLinks.addEventListener('click', toggleMenu);
 window.addEventListener('scroll', scrollAnimation);
+window.addEventListener('scroll', activeLinkBorder);
